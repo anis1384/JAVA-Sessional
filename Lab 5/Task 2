@@ -1,0 +1,22 @@
+class LibraryBook{
+    String title;
+    String author;
+    String bookId;
+    
+    LibraryBook(String title,String author,String bookId){
+        this.title=title;
+        this.author=author;
+        this.bookId=bookId;
+    }
+    public void displayBookInfo(){
+        System.out.println("Title:"+this.title);
+        System.out.println("Author:"+this.author);
+        System.out.println("Book ID:"+this.bookId);
+    }
+    }
+public class lab5Task2 {
+   public static void main(String[] args) {
+    LibraryBook b1=new LibraryBook("Atomic Habits", "James Clear","ISBN-10:978-0735211292");
+    b1.displayBookInfo();
+   } 
+}
