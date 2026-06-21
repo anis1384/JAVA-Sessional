@@ -1,0 +1,25 @@
+class Grandfather{
+    void company(){
+        System.out.println("Walton");
+    }
+}
+class Father extends Grandfather{
+    void car(){
+        System.out.println("BMW");
+    }
+}
+class Son extends Father{
+    void bike(){
+        System.out.println("Honda");
+    }
+}
+public class Lab6Task1 {
+    public static void main(String[] args) {
+        Son s=new Son();
+        System.out.println("........Son Owns ......");
+        s.company();
+        s.car();
+        s.bike();
+    }
+    
+}
