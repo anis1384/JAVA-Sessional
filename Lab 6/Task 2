@@ -1,0 +1,34 @@
+class Person{
+    void displayInfo(){
+        System.out.println("Eating");
+        System.out.println("Sleeping");
+    }
+    }
+    class Doctor extends Person{
+        void check(){
+            System.out.println("Doctor Checks patients");
+        }
+    }
+    class Teacher extends Person{
+        void teach(){
+            System.out.println("Teacher teachs the students");
+        }
+    }
+    class Engineer extends Person{
+        void solve(){
+            System.out.println("Engineer solves technical proplems");
+        }
+    }
+public class Lab6Task2 {
+    public static void main(String[] args) {
+        Doctor d=new Doctor();
+        Teacher t=new Teacher();
+        Engineer e=new Engineer();
+        d.displayInfo();
+        d.check();
+        t.displayInfo();
+        t.teach();
+        e.displayInfo();
+        e.solve();
+    }
+}
