@@ -1,0 +1,37 @@
+class BankAccount{
+   private String accountHolder;
+   private int accountNumber;
+  private  double balance;
+public void setAccountHolder(String a){
+    accountHolder=a;
+}
+public void setAccountNumber(int b){
+    accountNumber=b;
+}
+public void setBalance(double c){
+    balance=c;
+}
+public String getAccountHolder(){
+    return accountHolder;
+}
+public int getAccountNumber(){
+    return accountNumber;
+}
+public double getBalance(){
+    return balance;
+}
+}
+public class Lab8Task2 {
+    public static void main(String[] args) {
+        BankAccount a1=new BankAccount();
+        a1.setAccountHolder("Mohammed Anis");
+        a1.setAccountNumber(554477);
+        a1.setBalance(500000.00);
+        System.out.println("Account Info");
+        System.out.println("Account Holder:"+a1.getAccountHolder());
+        System.out.println("Account Number:"+a1.getAccountNumber());
+        System.out.println("Balance:"+a1.getBalance());
+
+    }
+    
+}
